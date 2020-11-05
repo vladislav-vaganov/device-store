@@ -1,0 +1,14 @@
+{
+  "name": "device-store-server",
+  "version": "1.0.0",
+  "description": "backend for device-store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Vladislav Vaganov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
