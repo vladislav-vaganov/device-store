@@ -1,8 +1,8 @@
-Malwarebytes' test task(React & NodeJS Exercise)
+# Malwarebytes' test task(React & NodeJS Exercise)
 
 Create the devices list with add / remove possibility
 
-##Backend part
+## Backend part
 Server part to be implemented by nodeJs
 Use a database or not - at your discretion.
 Any framework can be used.
@@ -10,7 +10,7 @@ Application should give a REST or GraphQL response.
 No Authentication needed, but could be scored as bonus.
 Backend part should be delivered as a Docker container.
 
-##Frontend part
+## Frontend part
 A frontend application should be implemented as a React single-page application.
 Feel free to use any frontend framework (bootstrap, material-ui, etc.)
 Demonstrate ability to manage the global application state.
