@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 const fetchData = async () => {
-  const response = await fetch('/list');
+  const response = await fetch('/api/list');
   const data = await response.json();
 
   if (response.status !== 200) {
@@ -39,8 +39,8 @@ function App() {
         </a>
         <b>
           Data from API:
-          {data.map((item) => (
-            <div>{item}</div>
+          {data.map((item, i) => (
+            <div key={i}>{item}</div>
           ))}
         </b>
       </header>
