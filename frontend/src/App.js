@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import { useState, useEffect } from 'react';
 import './App.css';
 
-const fetchData = async () => {
+const fetchDataGET = async () => {
   const response = await fetch('/api/list');
   const data = await response.json();
 
@@ -13,12 +13,34 @@ const fetchData = async () => {
   return data;
 };
 
+const fetchDataPOST = async () => {
+  const response = await fetch('/api/data', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify([4, 5, 6]),
+  });
+  const data = await response.json();
+
+  if (response.status !== 200) {
+    throw Error(data.message);
+  }
+
+  return data;
+};
+
 function App() {
-  const [data, setData] = useState([]);
+  const [dataGet, setDataGet] = useState([]);
+  const [dataPost, setDataPost] = useState([]);
 
   useEffect(() => {
-    fetchData()
-      .then((res) => setData(res))
+    fetchDataGET()
+      .then((res) => setDataGet(res))
+      .catch((err) => console.error(err));
+
+    fetchDataPOST()
+      .then((res) => setDataPost(res))
       .catch((err) => console.error(err));
   }, []);
 
@@ -37,13 +59,19 @@ function App() {
         >
           Learn React
         </a>
-        <b>
-          Data from API:
-          {data.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </b>
       </header>
+      <b>
+        API GET response:
+        {dataGet.map((item, i) => (
+          <div key={i}>{item}</div>
+        ))}
+      </b>
+      <b>
+        API POST response:
+        {dataPost.map((item, i) => (
+          <div key={i}>{item}</div>
+        ))}
+      </b>
     </div>
   );
 }
