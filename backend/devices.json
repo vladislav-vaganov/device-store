@@ -1,0 +1,156 @@
+[
+  {
+    "id": "91030a7b-b2a7-41d5-a936-78ea50620b6d",
+    "name": "Apple iPhone 12 Pro 512GB Silver",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1399,
+    "quantity": 7
+  },
+  {
+    "id": "cda3ef36-69ca-48fc-b86d-4c7cc63f9b9f",
+    "name": "Apple iPhone 12 Pro 256GB Graphite",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1199,
+    "quantity": 11
+  },
+  {
+    "id": "97a36570-3475-4b2e-888b-3674649ee019",
+    "name": "Apple iPhone 12 Pro 256GB Gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1199,
+    "quantity": 8
+  },
+  {
+    "id": "a132f60b-3840-411b-903b-8ebc53e0e979",
+    "name": "Apple iPhone 12 Pro 512GB Gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1399,
+    "quantity": 13
+  },
+  {
+    "id": "02a8b76d-c965-440b-be2b-3b865ee23adf",
+    "name": "Apple iPhone 12 Pro 512GB Graphite",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1399,
+    "quantity": 5
+  },
+  {
+    "id": "b7ddba01-478b-49fe-986b-fa70c30f9963",
+    "name": "Apple iPhone 12 256GB Black",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 979,
+    "quantity": 17
+  },
+  {
+    "id": "ea5a6e2c-1afc-4aa4-8bf8-58c1f7771132",
+    "name": "Apple iPhone 12 256GB White",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 979,
+    "quantity": 11
+  },
+  {
+    "id": "14a0564d-c2b9-4f5d-bb46-b804e4623e12",
+    "name": "Apple iPhone 12 128GB Green",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 879,
+    "quantity": 3
+  },
+  {
+    "id": "044e1ba1-a028-462d-b2a1-b955c2bbdb82",
+    "name": "Apple iPhone 12 128GB Red",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 879,
+    "quantity": 19
+  },
+  {
+    "id": "d83738bc-96bd-4ee2-907a-db7b53b20014",
+    "name": "Apple iPhone 11 128GB Red",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 649,
+    "quantity": 12
+  },
+  {
+    "id": "c7c86b66-cb8f-447a-b477-fc40fd688782",
+    "name": "Apple iPhone 11 64GB Black",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 599,
+    "quantity": 23
+  },
+  {
+    "id": "1580683e-7406-4230-8b5e-8efc1a3f9711",
+    "name": "Apple iPhone 11 64GB White",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 599,
+    "quantity": 9
+  },
+  {
+    "id": "9df2559e-afa4-48de-8f7b-6cb755853ecf",
+    "name": "Apple iPhone 11 64GB Yellow",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 599,
+    "quantity": 4
+  },
+  {
+    "id": "755929f6-1cf4-4e61-8b41-3ab84abf8a86",
+    "name": "Apple iPhone SE 64GB White",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 399,
+    "quantity": 8
+  },
+  {
+    "id": "84536066-8bda-41bf-ab4c-8fe314514a09",
+    "name": "Apple iPhone SE 128GB Black",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 449,
+    "quantity": 2
+  },
+  {
+    "id": "abf46356-dfa5-42e8-8f33-4327f1f87701",
+    "name": "Apple iPhone SE 128GB Red",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 449,
+    "quantity": 6
+  },
+  {
+    "id": "9dfd0529-db27-4f4d-ac0e-a43f03d1e2da",
+    "name": "Apple iPhone SE 256GB Black",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 549,
+    "quantity": 16
+  },
+  {
+    "id": "bb2652b0-06fb-449e-977a-5133785ca6c0",
+    "name": "Apple iPhone SE 256GB White",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 549,
+    "quantity": 7
+  },
+  {
+    "id": "25791b9d-822f-4ebd-a77a-d0dc9efc4742",
+    "name": "Apple MacBook Air 256GB Space Gray",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 999,
+    "quantity": 25
+  },
+  {
+    "id": "0904210a-6e19-4671-9b98-210bdfbc1e0b",
+    "name": "Apple MacBook Air 512GB Silver",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1299,
+    "quantity": 11
+  },
+  {
+    "id": "ce843e57-6a8e-4d59-a472-11e01df0eafd",
+    "name": "Apple MacBook Pro 13\" 512GB Silver",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 1499,
+    "quantity": 10
+  },
+  {
+    "id": "19bc0555-4560-4a78-a8e5-403b749bab1c",
+    "name": "Apple MacBook Pro 16\" 1TB Silver",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 2799,
+    "quantity": 9
+  }
+]
