@@ -1,14 +1,14 @@
 import { Container } from '@material-ui/core';
 import { AppHeader } from './AppHeader';
-import { DevicesList } from './DevicesList';
+import { DevicesListContainer } from '../containers/devicesListContainer';
 
 export const App = () => {
   return (
     <div className="App">
       <AppHeader />
 
-      <Container maxWidth="md">
-        <DevicesList />
+      <Container maxWidth="sm">
+        <DevicesListContainer />
       </Container>
     </div>
   );
