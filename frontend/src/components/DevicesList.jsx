@@ -1,29 +1,11 @@
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
-  Typography,
-} from '@material-ui/core';
+import { List } from '@material-ui/core';
+import { DevicesListItemContainer } from '../containers/devicesListItemContainer';
 
-export const DevicesList = ({ items }) => {
+export const DevicesList = ({ items, openItemDetails }) => {
   return (
     <List>
-      {items.map(({ id, name, quantity }, index) => (
-        <ListItem button divider key={id}>
-          <ListItemIcon>
-            <Typography variant="body1" color="textPrimary">
-              {index + 1}
-            </Typography>
-          </ListItemIcon>
-          <ListItemText primary={name} />
-          <ListItemSecondaryAction>
-            <Typography variant="body1" color="textPrimary">
-              {quantity}
-            </Typography>
-          </ListItemSecondaryAction>
-        </ListItem>
+      {items.map((item, index) => (
+        <DevicesListItemContainer key={item.id} {...item} index={index} />
       ))}
     </List>
   );
