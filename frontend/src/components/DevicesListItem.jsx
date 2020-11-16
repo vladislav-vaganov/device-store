@@ -6,8 +6,8 @@ import {
   Typography,
 } from '@material-ui/core';
 
-export const DevicesListItem = ({ id, name, quantity, index, openItemDetails }) => (
-  <ListItem button divider onClick={openItemDetails}>
+export const DevicesListItem = ({ id, name, quantity, index, openDeviceDetails }) => (
+  <ListItem button divider onClick={openDeviceDetails}>
     <ListItemIcon>
       <Typography variant="body1" color="textPrimary">
         {index + 1}

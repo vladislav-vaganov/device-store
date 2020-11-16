@@ -1,7 +1,7 @@
 import { List } from '@material-ui/core';
 import { DevicesListItemContainer } from '../containers/devicesListItemContainer';
 
-export const DevicesList = ({ items, openItemDetails }) => {
+export const DevicesList = ({ items }) => {
   return (
     <List>
       {items.map((item, index) => (

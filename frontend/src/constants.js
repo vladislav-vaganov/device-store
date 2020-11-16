@@ -5,6 +5,6 @@ export const ReducerNames = {
 };
 
 export const DialogTypes = {
-  itemDetails: 'itemDetails',
+  deviceDetails: 'deviceDetails',
   changesNotification: 'changesNotification',
 };

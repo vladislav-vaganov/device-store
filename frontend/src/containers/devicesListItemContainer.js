@@ -3,9 +3,9 @@ import { openDialog } from '../actions/dialog';
 import { DevicesListItem } from '../components/DevicesListItem';
 import { DialogTypes } from '../constants';
 
-const mapDispatchToProps = (dispatch, { id, index }) => ({
-  openItemDetails: () => {
-    dispatch(openDialog(DialogTypes.itemDetails, { id, index }));
+const mapDispatchToProps = (dispatch, { index }) => ({
+  openDeviceDetails: () => {
+    dispatch(openDialog(DialogTypes.deviceDetails, { index }));
   },
 });
 

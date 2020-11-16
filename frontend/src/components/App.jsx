@@ -1,23 +1,17 @@
 import { Container, Typography } from '@material-ui/core';
-import { AppHeader } from './AppHeader';
+import { AppHeaderContainer } from '../containers/appHeaderContainer';
 import { DevicesListContainer } from '../containers/devicesListContainer';
 import { ModalDialogContainer } from '../containers/modalDialogContainer';
+import { DeviceDetailsContainer } from '../containers/deviceDetailsContainer';
 import { DialogTypes } from '../constants';
 
 export const App = () => (
   <Container maxWidth="md">
-    <AppHeader />
+    <AppHeaderContainer />
 
     <DevicesListContainer />
 
-    <ModalDialogContainer
-      dialogType={DialogTypes.itemDetails}
-      Content={({ id, index }) => (
-        <Typography>
-          {DialogTypes.itemDetails} {id} {index}
-        </Typography>
-      )}
-    />
+    <ModalDialogContainer dialogType={DialogTypes.deviceDetails} Content={DeviceDetailsContainer} />
 
     <ModalDialogContainer
       dialogType={DialogTypes.changesNotification}

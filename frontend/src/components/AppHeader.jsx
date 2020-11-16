@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const AppHeader = ({ items = 0 }) => {
+export const AppHeader = ({ totalItemsInCart = 0 }) => {
   const classes = useStyles();
 
   return (
@@ -19,7 +19,7 @@ export const AppHeader = ({ items = 0 }) => {
         <Typography variant="h6" align="right">
           Total in cart:{' '}
           <Typography component="span" variant="h6" color="secondary">
-            {items} item(s)
+            {totalItemsInCart} item(s)
           </Typography>
         </Typography>
       </Toolbar>
