@@ -10,48 +10,66 @@ export const DeviceDetails = ({
   removeFromCart,
   itemsInCart,
 }) => (
-  <Grid container>
+  <Grid container spacing={2}>
     <Grid item xs={1}>
-      <Typography variant="body1" color="textPrimary">
+      <Typography variant="h6" color="textPrimary">
         {index + 1}
       </Typography>
     </Grid>
-    <Grid item xs={8}>
+    <Grid item xs={7}>
       <Typography variant="h6" color="textPrimary">
         {name}
       </Typography>
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs={3}>
       <Typography variant="h6" color="textPrimary">
         $ {price}
       </Typography>
     </Grid>
     <Grid item xs={1}>
-      <Typography variant="body1" color="textPrimary">
+      <Typography variant="h6" color="textSecondary">
         {quantity}
       </Typography>
     </Grid>
     <Grid item xs={1} />
-    <Grid item xs={8}>
+    <Grid item xs={7}>
       <Typography variant="body1" color="textPrimary">
         {description}
       </Typography>
     </Grid>
-    <Grid item xs={3}>
-      <Button variant="contained" color="primary" onClick={addToCart} disabled={quantity === 0}>
-        Add to cart
-      </Button>
-      <Button
-        variant="contained"
-        color="secondary"
-        onClick={removeFromCart}
-        disabled={itemsInCart === 0}
-      >
-        Remove from cart
-      </Button>
-      <Typography variant="body1" color="textSecondary">
-        This items in cart: {itemsInCart}
-      </Typography>
+    <Grid item xs={4}>
+      <Grid container spacing={1}>
+        <Grid item xs={12}>
+          <Button
+            size="small"
+            variant="contained"
+            color="primary"
+            onClick={addToCart}
+            disabled={quantity === 0}
+          >
+            Add to cart
+          </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <Button
+            size="small"
+            variant="contained"
+            color="secondary"
+            onClick={removeFromCart}
+            disabled={itemsInCart === 0}
+          >
+            Remove from cart
+          </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="body1" color="textSecondary">
+            This item in cart:{' '}
+            <Typography component="span" variant="body1" color="secondary">
+              {itemsInCart}
+            </Typography>
+          </Typography>
+        </Grid>
+      </Grid>
     </Grid>
   </Grid>
 );

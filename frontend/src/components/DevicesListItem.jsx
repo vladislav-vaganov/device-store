@@ -17,7 +17,7 @@ export const DevicesListItem = ({ id, name, quantity, index, openDeviceDetails }
     <ListItemText primary={name} />
 
     <ListItemSecondaryAction>
-      <Typography variant="body1" color="textPrimary">
+      <Typography variant="body1" color="textSecondary">
         {quantity}
       </Typography>
     </ListItemSecondaryAction>
