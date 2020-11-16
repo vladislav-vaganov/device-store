@@ -20,7 +20,7 @@ function* postQuantityChanges({ id, delta }) {
 
   const errorMessage = yield response.text() || 'An error occurred.';
 
-  alert(errorMessage);
+  console.error(errorMessage);
 
   return null;
 }
