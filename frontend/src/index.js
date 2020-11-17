@@ -15,3 +15,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const eventSource = new EventSource('/api/subscribe');
+eventSource.addEventListener('updateQuantity', ({ data }) => {
+  console.log(JSON.parse(data));
+});
