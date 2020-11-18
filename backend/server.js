@@ -24,10 +24,10 @@ app.get('/devices/:id', (req, res) => {
   res.send(device);
 });
 
-app.post('/devices/:id/quantity/change', (req, res) => {
+app.put('/devices/:id/quantity', (req, res) => {
   const { delta } = req.body;
-  const device = service.changeItemQuantity(req.params.id, delta);
-  res.send(device);
+  const quantity = service.changeItemQuantity(req.params.id, delta);
+  res.send({ quantity });
 });
 
 app.use(function (err, req, res, next) {

@@ -39,7 +39,7 @@ class DevicesService {
     }
 
     item.quantity = quantity + delta;
-    return item;
+    return item.quantity;
   }
 }
 

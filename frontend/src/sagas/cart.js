@@ -5,8 +5,8 @@ import { ReducerNames } from '../constants';
 import { updateListItemQuantity } from '../actions/list';
 
 function* postQuantityChanges({ id, delta }) {
-  const response = yield call(fetch, `/api/devices/${id}/quantity/change`, {
-    method: 'POST',
+  const response = yield call(fetch, `/api/devices/${id}/quantity`, {
+    method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
