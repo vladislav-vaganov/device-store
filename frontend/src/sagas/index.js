@@ -1,8 +1,8 @@
 import { all } from '@redux-saga/core/effects';
 import { watchAddToCart, watchRemoveFromCart } from './cart';
 
-import { fetchList } from './list';
+import { fetchList, watchQuantityUpdates } from './list';
 
 export const rootSaga = function* () {
-  yield all([fetchList(), watchAddToCart(), watchRemoveFromCart()]);
+  yield all([fetchList(), watchQuantityUpdates(), watchAddToCart(), watchRemoveFromCart()]);
 };

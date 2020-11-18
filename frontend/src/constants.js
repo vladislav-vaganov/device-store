@@ -8,3 +8,5 @@ export const DialogTypes = {
   deviceDetails: 'deviceDetails',
   changesNotification: 'changesNotification',
 };
+
+export const WatchQuantityUpdatesInterval = 5000;

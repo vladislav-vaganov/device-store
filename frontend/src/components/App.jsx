@@ -1,8 +1,9 @@
-import { Container, Typography } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { AppHeaderContainer } from '../containers/appHeaderContainer';
 import { DevicesListContainer } from '../containers/devicesListContainer';
 import { ModalDialogContainer } from '../containers/modalDialogContainer';
 import { DeviceDetailsContainer } from '../containers/deviceDetailsContainer';
+import { ChangesNotification } from './ChangesNotification';
 import { DialogTypes } from '../constants';
 
 export const App = () => (
@@ -15,7 +16,8 @@ export const App = () => (
 
     <ModalDialogContainer
       dialogType={DialogTypes.changesNotification}
-      Content={() => <Typography>{DialogTypes.changesNotification}</Typography>}
+      title="Someone changed the data:"
+      Content={ChangesNotification}
     />
   </Container>
 );

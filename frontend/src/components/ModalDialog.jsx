@@ -1,8 +1,9 @@
-import { Button, Dialog, DialogActions, DialogContent } from '@material-ui/core';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/core';
 
-export const ModalDialog = ({ open = false, handleClose, Content, params = {} }) => (
+export const ModalDialog = ({ open = false, handleClose, title, Content, params = {} }) => (
   <Dialog onClose={handleClose} open={open} scroll="paper" fullWidth maxWidth="sm">
-    <DialogContent dividers>
+    {title && <DialogTitle>{title}</DialogTitle>}
+    <DialogContent>
       <Content {...params} />
     </DialogContent>
     <DialogActions>

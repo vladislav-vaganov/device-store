@@ -15,6 +15,10 @@ app.get('/devices', (req, res) => {
   res.send(service.getList());
 });
 
+app.get('/devices/quantities', (req, res) => {
+  res.send(service.getDevicesQuantities());
+});
+
 app.get('/devices/:id', (req, res) => {
   const device = service.getItem(req.params.id);
   res.send(device);

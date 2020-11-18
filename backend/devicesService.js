@@ -1,19 +1,23 @@
 const { ApiError, HttpStatusCodes } = require('./ApiError');
 
-const convertToDict = (array = []) =>
+const convertToDict = (array = [], selector) =>
   array.reduce((dict, item) => {
-    dict[item.id] = item;
+    dict[item.id] = selector(item);
     return dict;
   }, {});
 
 class DevicesService {
   constructor() {
     this.devices = require('./devices.json');
-    this.devicesDict = convertToDict(this.devices);
+    this.devicesDict = convertToDict(this.devices, (item) => item);
   }
 
   getList() {
     return this.devices;
+  }
+
+  getDevicesQuantities() {
+    return convertToDict(this.devices, ({ quantity }) => quantity);
   }
 
   getItem(id) {
