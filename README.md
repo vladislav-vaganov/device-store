@@ -1,3 +1,8 @@
+To launch project run folow commands:
+$ git clone https://github.com/vladislav-vaganov/device-store.git
+$ cd device-store
+$ docker-compose up
+
 # Malwarebytes' test task(React & NodeJS Exercise)
 
 Create the devices list with add / remove possibility
